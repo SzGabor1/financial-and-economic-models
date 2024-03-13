@@ -95,15 +95,17 @@ Summary <- function(X, Y) {
 }
 
 Polreg <- function(){
-X=c(1,2,3,4)
-Y=c(15,33,61,99)
+X=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+
+Y <- 5 * X^2 + 3 * X + 7
+#Y <- 3*X+7
 A2 = CalcA2(X,Y);
-A2 = CalcA1(X,Y);
-A2 = CalcA0(X,Y);
+A1 = CalcA1(X,Y);
+A0 = CalcA0(X,Y);
 
 plot(X,Y)
-curve(A2*X^2+A1*X+A0, type="1", lty = 1, col = red)
 
+lines(X,A2*X^2+A1*X+A0, type="l", lty = 1, col = "red")
 }
 
 
