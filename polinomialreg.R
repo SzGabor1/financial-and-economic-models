@@ -37,7 +37,7 @@ x2y<-Summary(X^2,Y)
 x2<- Summary(X^2)
 x3<- Summary(X^3)
 xy <-Summary(X,Y)
-x<- Summary(X^3)
+x<- Summary(X)
 x2<-Summary(X^2)
 
 y<-Summary(Y)
